@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="descripcion" content="Contáctanos para cualquier consulta, sugerencia o comentario. Encuentra aquí nuestra información de contacto y formulario de contacto para ponerte en contacto con nuestro equipo de atención al cliente.">
+    <title>ontacto: CLOUD TECHNOLOGY</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../scss/style.css" />
+</head>
+
+<body>
+    <header class="container-fluid">
+        <div class="container-header row">
+            <div class="container-header__logo col-3 d-flex justify-content-center align-items-center">
+                <img src="/img/logo.png" alt="img-logo" class="logo-img" />
+            </div>
+            <div class="container-search-bar col-7 d-flex justify-content-start align-items-center">
+                <input type="text" name="" id="search-bar_input" class="search-bar__input" placeholder="Search...">
+                <span class="material-symbols-outlined">search</span>
+            </div>
+            <div class="container-trolley col-1 d-flex justify-content-center align-items-center">
+                <button class="trolley-login__btn">
+                    <span class="material-symbols-outlined">shopping_cart</span>
+                </button>
+            </div>
+            <div class="container-login col-1 d-flex justify-content-center align-items-center">
+                <button class="trolley-login__btn">
+                    <span class="material-symbols-outlined">person</span>
+                </button>
+            </div>
+        </div>
+        <nav class="container-nav-menu container-fluid ">
+            <ul class="nav-menu__ul row d-flex justify-content-center">
+                <li class="nav-menu-ul__li --modificador  col-2">
+                    <a href="../index.html"> Inicio </a>
+                </li>
+                <li class="nav-menu-ul__li col-2">
+                    <a href="quienes-somos.html"> Sobre nosotros </a>
+                </li>
+                <li class="nav-menu-ul__li col-2">
+                    <a href="productos.html"> Productos</a>
+                </li>
+                <li class="nav-menu-ul__li col-2">
+                    <a href="compras.html">Cómo comprar </a>
+                </li>
+                <li class="nav-menu-ul__li col-2">
+                    <a href="contacto.html" >Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="ContactPage-title">CONTACTANOS</h1>
+        <p>"En nuestra página de contacto, podrás comunicarte con nosotros de manera sencilla y rápida. Contáctanos a través de nuestro formulario en línea, correo electrónico o redes sociales, y estaremos encantados de responder a tus preguntas y comentarios. <br>También puedes visitarnos en nuestra tienda física si necesitas ayuda adicional. ¡Estamos aquí para ayudarte!" </p>
+        <div class="container-contactPage-map">
+            <!-- mapa sobre la ubicacion del lugar  -->
+        </div>
+        <form action="#" method="post">
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div>
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+            </div>
+            <div>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            </div>
+            <div>
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+        <!----------------------------------------->
+        <!--------------PURCHASE INF--------------->
+        <section class="container-purchase-inf">
+            <div class="purchase-inf">
+                <div class="purchase-inf__icon">icono</div>
+                <p>Cuotas sin interés</p>
+                <p>en productos seleccionados</p>
+            </div>
+            <div class="purchase-inf">
+                <div class="purchase-inf__icon">icono</div>
+                <p>¡Retiro gratis en tienda!</p>
+                <p>¡Envíos a todo el país!</p>
+            </div>
+            <div class="purchase-inf">
+                <div class="purchase-inf__icon">iconos</div>
+                <p>Compra Segura.</p>
+                <p>Garantías oficiales!</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <!----------LIST FOOTER INFORMATION--------->
+        <div class="container-inf-footer">
+            <ul class="inf-footer__ul">
+                <li>Información</li>
+                <li>Se parte de bright</li>
+                <li>contactenos</li>
+                <li>Tiendas</li>
+                <li>Quienes somos</li>
+            </ul>
+            <ul class="inf-footer__ul">
+                <li>Mi cuenta</li>
+                <li>Pedidos pendientes</li>
+                <li>Historial de pedidos</li>
+                <li>Informacion personal</li>
+            </ul>
+            <ul class="inf-footer__ul">
+                <li>Datos de contacto</li>
+                <li>Garantia de productos</li>
+                <li>Ventas corporativas</li>
+                <li>Email:</li>
+            </ul>
+        </div>
+        <!---------------SOCIAL NETWORKS--------->
+        <div class="container-social-network-footer">
+            <ul class="social-networks-footer__ul">
+                <li>instagram</li>
+                <li>facebook</li>
+                <li>twitter</li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+
+</html>

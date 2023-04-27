@@ -1,0 +1,65 @@
+@import 'variables';
+* {
+    padding: 0;
+    margin: 0;
+}
+body{
+    overflow-x: hidden;
+}
+header{
+    background-color: #fff;
+    height: 140px;
+    .container-header__logo{
+        padding-right: 90px;
+        .logo-img{
+            width: 120px;
+            height: 100px;
+            overflow: hidden;
+        }
+    }
+    .container-search-bar{
+        padding-left: 90px;
+        .search-bar__input{
+            background-color: #e2e2e2;
+            border: none;
+            border-radius: 10px;
+            padding-left: 10px;
+            width: 350px;
+            height: 40px;
+        }
+        span{
+            position: absolute;
+            z-index: 1;
+            margin-left: 320px;
+            color: #4f5b66;
+        }
+    }
+    .trolley-login__btn{
+        @each $property, $value in $btnheader {
+            #{$property} : $value;
+        }
+    }
+    .container-nav-menu{
+        ul{
+            .--modificador{
+                padding-left: 50px;
+            }
+            li{
+                list-style: none;
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+        
+    }
+}
+main{
+    .carousel{
+        margin-left: 20px;
+        .img-cover{
+            width: map-get($coverSize , width );
+            height: map-get($coverSize , height)
+        }
+    }
+}
