@@ -1,0 +1,14 @@
+.featured-products__card{
+    width: 230px;
+    height: 300px;
+    border: solid #000 1px;
+    margin: 20px;
+    h2{
+        font-size: 11px;
+    }
+    .featured-products__card__img{
+        width: 190px;
+        height: 190px;
+        margin-left: 20px;
+    }
+}

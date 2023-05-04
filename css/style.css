@@ -1,3 +1,18 @@
+.featured-products__card {
+  width: 230px;
+  height: 300px;
+  border: solid #000 1px;
+  margin: 20px;
+}
+.featured-products__card h2 {
+  font-size: 11px;
+}
+.featured-products__card .featured-products__card__img {
+  width: 190px;
+  height: 190px;
+  margin-left: 20px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -60,4 +75,12 @@ main .carousel {
 main .carousel .img-cover {
   width: 1200px;
   height: 450px;
-}/*# sourceMappingURL=style.css.map */
+}
+main .most-selling-products__slide, main .featured-products__slide {
+  display: flex;
+  flex-direction: row;
+  border: solid 1px #000;
+  margin: 0 50px;
+}
+
+/*# sourceMappingURL=style.css.map */
