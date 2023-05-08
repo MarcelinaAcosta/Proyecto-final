@@ -54,10 +54,11 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <h1>cómo comprar ?</h1>
-        <div class="container-howToBuy-description">
-            <p>1.Elige el producto que deseas comprar. <br>2.Haz clic en el botón de "Agregar al carrito". Esto agregará el producto a tu carrito y te llevará al mismo.
+    <main >
+        <div class="maincompras">
+                <h1 class="comocomprartittle">cómo comprar ?</h1>
+            <div class="container-howToBuy-description">
+                <p>1.Elige el producto que deseas comprar. <br>2.Haz clic en el botón de "Agregar al carrito". Esto agregará el producto a tu carrito y te llevará al mismo.
                 <br>3.Puedes seguir agregando otros productos al carrito o sino haz clic en "Iniciar Compra".<br>4.Completa tus datos de contacto y haz clic en "Continuar".
                 <br>5.Selecciona el medio de envío.<br>a. Sisos de Zona Sur, los envíos se realizan los días sábados. Zona Sur implica Rumencó, Arenas del Sur, Haras del
                 Sur y Las Prunas.<br>b. — Parael resto de Mar del Plata, operamos con Glovo. Hacé click en el siguiente link para chequear si estas dentro
@@ -66,62 +67,71 @@
                 clic en "Continuar".<br>8.Ahí serás redirigido a otra pantalla para que completes los datos sobre la forma de pago elegida. Después de
                 confirmar la compra recibirás un correo de nuestra parte, ese no será un comprobante de pago.
                 <br>9.Una vez acreditado el pago, nos pondremos en contacto para arreglar el envío..</p>
+            </div>
+            <div class="container-howToBuy-btn">
+                <button class="howToBuy__btn">ir al carrito</button>
+            </div>
         </div>
-        <div class="container-howToBuy-btn">
-            <button class="howToBuy__btn">ir al carrito</button>
-        </div>
+        
         <!----------------------------------------->
         <!--------------PURCHASE INF--------------->
         <section class="container-purchase-inf">
             <div class="purchase-inf">
-                <div class="purchase-inf__icon">icono</div>
-                <p>Cuotas sin interés</p>
-                <p>en productos seleccionados</p>
+                <div class="purchase-inf__icon">
+                    <span class="material-symbols-outlined">
+                        credit_card
+                        </span>
+                </div>
+                <p>Cuotas sin interés<br>en productos seleccionados</p>
             </div>
             <div class="purchase-inf">
-                <div class="purchase-inf__icon">icono</div>
-                <p>¡Retiro gratis en tienda!</p>
-                <p>¡Envíos a todo el país!</p>
+                <div class="purchase-inf__icon">
+                    <span class="material-symbols-outlined">
+                        local_shipping
+                        </span>
+                </div>
+                <p>¡Retiro gratis en tienda!<br>¡Envíos a todo el país!</p>
             </div>
             <div class="purchase-inf">
-                <div class="purchase-inf__icon">iconos</div>
-                <p>Compra Segura.</p>
-                <p>Garantías oficiales!</p>
+                <div class="purchase-inf__icon">
+                    <span class="material-symbols-outlined">
+                        verified_user
+                        </span>
+                </div>
+                <p>Compra Segura. <br> Garantías oficiales!</p>
             </div>
         </section>
     </main>
-    <footer>
-        <!----------LIST FOOTER INFORMATION--------->
-        <div class="container-inf-footer">
-            <ul class="inf-footer__ul">
-                <li>Información</li>
-                <li>Se parte de bright</li>
-                <li>contactenos</li>
-                <li>Tiendas</li>
-                <li>Quienes somos</li>
-            </ul>
-            <ul class="inf-footer__ul">
-                <li>Mi cuenta</li>
-                <li>Pedidos pendientes</li>
-                <li>Historial de pedidos</li>
-                <li>Informacion personal</li>
-            </ul>
-            <ul class="inf-footer__ul">
-                <li>Datos de contacto</li>
-                <li>Garantia de productos</li>
-                <li>Ventas corporativas</li>
-                <li>Email:</li>
-            </ul>
-        </div>
-        <!---------------SOCIAL NETWORKS--------->
-        <div class="container-social-network-footer">
-            <ul class="social-networks-footer__ul">
-                <li>instagram</li>
-                <li>facebook</li>
-                <li>twitter</li>
-            </ul>
-        </div>
+
+    <footer class="container-fluid ">
+            <div class="container-inf-footer row">
+                <ul class="inf-footer__ul col-4">
+                    <li>Información  <span class="material-symbols-outlined">
+                        info
+                        </span></li>
+                    <li>Se parte de bright</li>
+                    <li>contactenos</li>
+                    <li>Tiendas</li>
+                    <li>Quienes somos</li>
+                </ul>
+                <ul class="inf-footer__ul col-4">
+                    <li>Mi cuenta <span class="material-symbols-outlined">
+                        person
+                        </span> </li>
+                    
+                    <li>Pedidos pendientes</li>
+                    <li>Historial de pedidos</li>
+                    <li>Informacion personal</li>
+                </ul>
+                <ul class="inf-footer__ul col-4">
+                    <li>Datos de contacto</li>
+                    <li>Garantia de productos</li>
+                    <li>Ventas corporativas</li>
+                    <li>Email: cloud.technology@gmail.com</li>
+                </ul>
+            </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
+
 </html>

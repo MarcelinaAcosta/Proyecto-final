@@ -1,4 +1,4 @@
-.flexconfigurationcenter, main .container-btn-allProducts, main .most-selling-products__slide, main .featured-products__slide, main .img-advertising, .containeR-allProducts-btn {
+.flexconfigurationcenter, main .container-btn-allProducts, main .most-selling-products__slide, main .featured-products__slide, main .img-advertising, .maincontactos .formulariodecontacto form .container-contacto__btn, .containeR-allProducts-btn {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -16,7 +16,7 @@
   justify-content: space-between;
 }
 
-.btnindexconfiguration, main .container-btn-allProducts .allProducts__btn, main .featured-products__h1, main .most-selling-products__h2, .containeR-allProducts-btn .allProducts__btn, .container-allProducts-cards .allProducts-card .allProducts-card__btn {
+.btnindexconfiguration, main .container-btn-allProducts .allProducts__btn, main .featured-products__h1, main .most-selling-products__h2, .maincontactos .formulariodecontacto form .container-contacto__btn .contacto__btn, .maincompras .howToBuy__btn, .containeR-allProducts-btn .allProducts__btn, .container-allProducts-cards .allProducts-card .allProducts-card__btn {
   border-radius: 4px;
   text-align: center;
   -webkit-box-shadow: 10px 10px 5px -8px rgba(0, 0, 0, 0.87);
@@ -95,7 +95,7 @@
   border: none;
 }
 
-.flexconfigurationcenter, main .container-btn-allProducts, main .most-selling-products__slide, main .featured-products__slide, main .img-advertising, .containeR-allProducts-btn {
+.flexconfigurationcenter, main .container-btn-allProducts, main .most-selling-products__slide, main .featured-products__slide, main .img-advertising, .maincontactos .formulariodecontacto form .container-contacto__btn, .containeR-allProducts-btn {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -113,7 +113,7 @@
   justify-content: space-between;
 }
 
-.btnindexconfiguration, main .container-btn-allProducts .allProducts__btn, main .featured-products__h1, main .most-selling-products__h2, .container-allProducts-cards .allProducts-card .allProducts-card__btn, .containeR-allProducts-btn .allProducts__btn {
+.btnindexconfiguration, main .container-btn-allProducts .allProducts__btn, main .featured-products__h1, main .most-selling-products__h2, .maincontactos .formulariodecontacto form .container-contacto__btn .contacto__btn, .maincompras .howToBuy__btn, .container-allProducts-cards .allProducts-card .allProducts-card__btn, .containeR-allProducts-btn .allProducts__btn {
   border-radius: 4px;
   text-align: center;
   -webkit-box-shadow: 10px 10px 5px -8px rgba(0, 0, 0, 0.87);
@@ -135,9 +135,116 @@
   line-height: 30px;
 }
 
+.flexconfigurationcenter, main .container-btn-allProducts, main .most-selling-products__slide, main .featured-products__slide, main .img-advertising, .maincontactos .formulariodecontacto form .container-contacto__btn, .containeR-allProducts-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.flexconfigurationaround, main .container-purchase-inf, .container-img-gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.flexconfigurationbetween {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.btnindexconfiguration, main .container-btn-allProducts .allProducts__btn, main .featured-products__h1, main .most-selling-products__h2, .maincontactos .formulariodecontacto form .container-contacto__btn .contacto__btn, .maincompras .howToBuy__btn, .container-allProducts-cards .allProducts-card .allProducts-card__btn, .containeR-allProducts-btn .allProducts__btn {
+  border-radius: 4px;
+  text-align: center;
+  -webkit-box-shadow: 10px 10px 5px -8px rgba(0, 0, 0, 0.87);
+  -moz-box-shadow: 10px 10px 5px -8px rgba(0, 0, 0, 0.87);
+  box-shadow: 10px 10px 5px -8px rgba(0, 0, 0, 0.87);
+  background: #ebcded;
+}
+
+* {
+  color: #000;
+}
+
+.maincompras {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
+}
+.maincompras .comocomprartittle {
+  color: salmon;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+.maincompras .howToBuy__btn {
+  border: none;
+  width: 300px;
+  padding: 5px;
+  margin: 10px;
+}
+
+.flexconfigurationcenter, main .container-btn-allProducts, main .most-selling-products__slide, main .featured-products__slide, main .img-advertising, .maincontactos .formulariodecontacto form .container-contacto__btn, .containeR-allProducts-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.flexconfigurationaround, main .container-purchase-inf, .container-img-gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.flexconfigurationbetween {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.btnindexconfiguration, main .container-btn-allProducts .allProducts__btn, main .featured-products__h1, main .most-selling-products__h2, .maincontactos .formulariodecontacto form .container-contacto__btn .contacto__btn, .container-allProducts-cards .allProducts-card .allProducts-card__btn, .containeR-allProducts-btn .allProducts__btn, .maincompras .howToBuy__btn {
+  border-radius: 4px;
+  text-align: center;
+  -webkit-box-shadow: 10px 10px 5px -8px rgba(0, 0, 0, 0.87);
+  -moz-box-shadow: 10px 10px 5px -8px rgba(0, 0, 0, 0.87);
+  box-shadow: 10px 10px 5px -8px rgba(0, 0, 0, 0.87);
+  background: #ebcded;
+}
+
+.maincontactos {
+  margin: 50px 20px;
+}
+.maincontactos h1 {
+  color: salmon;
+  font-size: 36px;
+}
+.maincontactos .formulariodecontacto form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.maincontactos .formulariodecontacto form input {
+  width: 300px;
+  height: 40px;
+  margin: 5px auto;
+}
+.maincontactos .formulariodecontacto form textarea {
+  width: 300px;
+  height: 200px;
+  margin: 5px auto;
+}
+.maincontactos .formulariodecontacto form .container-contacto__btn .contacto__btn {
+  width: 300px;
+  padding: 5px;
+  border: none;
+}
+
 * {
   padding: 0;
   margin: 0;
+  color: #000;
 }
 
 body {

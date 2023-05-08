@@ -1,0 +1,40 @@
+@import 'variables';
+
+
+.maincontactos{
+    margin: 50px 20px;
+    h1{
+        color: salmon;
+        font-size: 36px;
+    }
+    .formulariodecontacto{
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            
+            input{
+                width: 300px;
+                height: 40px;
+                margin: 5px auto;
+            }
+            textarea{
+                width: 300px;
+                height: 200px;
+                margin: 5px auto;
+            }
+            .container-contacto__btn{
+                @extend .flexconfigurationcenter;
+                .contacto__btn{
+                    @extend .btnindexconfiguration;
+                    width: 300px;
+                    padding: 5px;
+                    border: none;
+                }
+            }
+            
+        }
+    }
+}
