@@ -1,9 +1,9 @@
 .featured-products__card, .most-selling__card{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    line-height: 35px;
+    line-height: 20px;
     border-radius: 4px;
     border: 1px #e0e0e0 solid;
     width: 230px;

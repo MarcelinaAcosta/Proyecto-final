@@ -1,0 +1,15 @@
+@import 'variables';
+.container-img-gallery{
+    @extend .flexconfigurationaround;
+    .img-gallery{
+        margin: 10px;
+    }
+    .gallery__img{
+        width: 400px;
+        height: 300px;
+    }
+}
+.container-about-us-description{
+    text-align: center;
+    line-height: 30px;
+}

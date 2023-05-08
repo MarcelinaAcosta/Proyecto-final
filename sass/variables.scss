@@ -1,6 +1,31 @@
+.flexconfigurationcenter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+};
+.flexconfigurationaround{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+};
+.flexconfigurationbetween{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btnindexconfiguration{
+    border-radius: 4px;
+    text-align: center;
+    -webkit-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.87);
+    -moz-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.87);
+    box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.87);
+    background: #ebcded;
+    
+};
 $coverSize: (
     width: 1200px,
-    height: 450px
+    height: 400px
 );
 $btnheader:(
     background-color: #e2e2e2,
@@ -14,4 +39,13 @@ $btnheader:(
 $slideproductsindex:(
     display: flex,
     flex-direction: row,
-)
+);
+$btnmain:(
+    background-color: #b993fa,
+    border: 1px solid #000,
+    border-radius: 5px,
+    text-align: center,
+    padding: 5px,
+    width: 300px,
+    height: 40px,
+);
