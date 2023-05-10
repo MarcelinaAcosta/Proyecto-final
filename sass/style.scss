@@ -1,13 +1,10 @@
-
+@import 'mediaquaries';
 @import 'variables';
-
 @import 'cards';
 @import 'productspage';
 @import 'quienes-somos';
 @import 'compras';
 @import 'contacto';
-
-
 
 * {
     padding: 0;
@@ -17,20 +14,33 @@
 body{
     overflow-x: hidden;
     color: #000;
+    
 }
 header{
     background-color: #fff;
     height: 140px;
     .container-header__logo{
         padding-right: 90px;
+        @include mobile{
+            padding-right: 10px;
+            background-color: red;
+        }
         .logo-img{
             width: 120px;
             height: 100px;
             overflow: hidden;
+            @include mobile{
+                width: 60px;
+                height: 50px;
+                overflow: hidden;
+            }
         }
     }
     .container-search-bar{
         padding-left: 90px;
+        @include mobile{
+            padding-left: 40px;
+        }
         .search-bar__input{
             background-color: #e2e2e2;
             border: none;
@@ -38,20 +48,37 @@ header{
             padding-left: 10px;
             width: 350px;
             height: 40px;
+            @include mobile{
+            padding-left: 10px;
+            width: 200px;
+            height: 30px;
+            }
         }
         span{
             position: absolute;
             z-index: 1;
             margin-left: 320px;
             color: #4f5b66;
+            @include mobile {
+                margin-left: 170px;
+            }
         }
     }
     .trolley-login__btn{
         @each $property, $value in $btnheader {
             #{$property} : $value;
         }
+        @include mobile {
+            width: 30px;
+            height: 30px;
+            padding: 5px;
     }
+}
     .container-nav-menu{
+        @include mobile{
+            display: none;
+            background: red;
+        }
         ul{
             .--modificador{
                 padding-left: 50px;
@@ -62,9 +89,14 @@ header{
                     text-decoration: none;
                     color: #000
                 }
-            }
-        }
-        
+            } 
+        }  
+    }
+    .navbar{
+    display: none;
+    @include mobile{
+        display: inline;
+    }
     }
 }
 main{

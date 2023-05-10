@@ -250,6 +250,7 @@
 body {
   overflow-x: hidden;
   color: #000;
+  background-color: red;
 }
 
 header {
@@ -270,20 +271,8 @@ header .container-header__logo .logo-img {
   height: 100px;
   overflow: hidden;
 }
-@media only screen and (max-width: 576px) {
-  header .container-header__logo .logo-img {
-    width: 60px;
-    height: 50px;
-    overflow: hidden;
-  }
-}
 header .container-search-bar {
   padding-left: 90px;
-}
-@media only screen and (max-width: 576px) {
-  header .container-search-bar {
-    padding-left: 40px;
-  }
 }
 header .container-search-bar .search-bar__input {
   background-color: #e2e2e2;
@@ -293,23 +282,11 @@ header .container-search-bar .search-bar__input {
   width: 350px;
   height: 40px;
 }
-@media only screen and (max-width: 576px) {
-  header .container-search-bar .search-bar__input {
-    padding-left: 10px;
-    width: 200px;
-    height: 30px;
-  }
-}
 header .container-search-bar span {
   position: absolute;
   z-index: 1;
   margin-left: 320px;
   color: #4f5b66;
-}
-@media only screen and (max-width: 576px) {
-  header .container-search-bar span {
-    margin-left: 170px;
-  }
 }
 header .trolley-login__btn {
   background-color: #e2e2e2;
@@ -318,13 +295,6 @@ header .trolley-login__btn {
   width: 45px;
   height: 45px;
   padding: 10px;
-}
-@media only screen and (max-width: 576px) {
-  header .trolley-login__btn {
-    width: 30px;
-    height: 30px;
-    padding: 5px;
-  }
 }
 @media only screen and (max-width: 576px) {
   header .container-nav-menu {
@@ -343,12 +313,7 @@ header .container-nav-menu ul li a {
   color: #000;
 }
 header .navbar {
-  display: none;
-}
-@media only screen and (max-width: 576px) {
-  header .navbar {
-    display: inline;
-  }
+  display: hidden;
 }
 
 main .featured-products__h1, main .most-selling-products__h2 {
@@ -416,4 +381,4 @@ footer .container-inf-footer li:nth-child(1) {
   font-size: 20px;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=atyle.css.map */
