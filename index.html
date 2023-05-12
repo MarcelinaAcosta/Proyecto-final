@@ -17,42 +17,60 @@
 <body>
     <header class="container-fluid">
         <div class="container-header row">
-            
-              
-            <div class="container-header__logo col-3 col-sm-2 d-flex justify-content-center align-items-center">
+            <!------------------------- NAV BAR  ----------------------------->
+            <!-- ----------------------------------------------------------------- -->
+            <div class="navbarsecundary col col-sm-1">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" aria-label="Toggle navigation">
+                <span class="material-symbols-outlined">menu</span>
+                </button>
+                
+            </div>
+            <div class="container-header__logo col col-lg-3 col-sm-2 d-flex justify-content-center align-items-center">
                 <img src="img/logo.png" alt="img-logo" class="logo-img" />
             </div>
-            <div class="container-search-bar col-7 col-sm-6 d-flex justify-content-start align-items-center">
+            <div class="container-search-bar col col-lg-7 col-sm-4 d-flex justify-content-start align-items-center">
                 <input type="text" name="" id="search-bar_input" class="search-bar__input" placeholder="Search...">
                 <span class="material-symbols-outlined">search</span>
             </div>
-            <div class="container-trolley col-1 col-sm-2 d-flex justify-content-center align-items-center d-sm-flex justify-content-sm-start">
+            <div class="container-trolley col col-lg-1 col-sm-1 d-flex justify-content-center align-items-center d-sm-flex ">
                 <button class="trolley-login__btn">
                     <span class="material-symbols-outlined">shopping_cart</span>
                 </button>
             </div>
-            <div class="container-login col-1 col-sm-2 d-flex justify-content-center align-items-center d-sm-flex justify-content-sm-start">
+            <div class="container-login col col-lg-1 col-sm-1 d-flex justify-content-center align-items-center d-sm-flex">
                 <button class="trolley-login__btn">
                     <span class="material-symbols-outlined">person</span>
                 </button>
             </div>
-            <nav class="navbar navbar-light bg-light">
-                <div class="container-fluid">
-                  <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-                    data-mdb-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fas fa-bars"></i>
-                  </button>
+         <!-- ------menu secundario----- -->
+            <div class="navbarsecundary ">
+                <div  class="collapse navbarsecundarycollapse" id="collapseExample">
+                    <div class="links-collapse shadow-3 p-4 d-flex flex-column" >
+                        <ul>
+                            <li>
+                                <a href="index.html"> Inicio </a>
+                            </li>
+                            <li>
+                                <a href="./pages/quienes-somos.html"> Sobre nosotros </a>
+                            </li>
+                            <li >
+                                <a href="./pages/productos.html"> Productos</a>
+                            </li>
+                            <li >
+                                <a href="./pages/compras.html">Cómo comprar </a>
+                            </li>
+                            <li>
+                                <a href="./pages/contacto.html" >Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-              </nav>
-              <div class="collapse" id="navbarToggleExternalContent">
-                <div class="bg-light shadow-3 p-4">
-                  <button class="btn btn-link btn-block border-bottom m-0">Link 1</button>
-                  <button class="btn btn-link btn-block border-bottom m-0">Link 2</button>
-                  <button class="btn btn-link btn-block m-0">Link 3</button>
-                </div>
+
             </div>
+            
         </div>
+        <!-- ----------------------menu principal--- ---------------- -->
+        <!-- -------------------------------------------------- -------->
         <nav class="container-nav-menu container-fluid ">
             <ul class="nav-menu__ul row d-flex justify-content-center">
                 <li class="nav-menu-ul__li --modificador  col-2">
@@ -133,7 +151,7 @@
         <!----------------------------------------->
         <!-----------ADVERTISING IMG--------------->
         <section class="img-advertising ">
-            <img src="img/xiaomi.png" alt="img-advertising" class="img-advertising__img" />
+            <img src="/img/xiaomi.png" alt="img-advertising" class="img-advertising__img" />
         </section>
         <!----------------------------------------->
         <!-----SLIDE MOST SELLING PRODUCTS--------->
@@ -207,7 +225,7 @@
 
     <footer class="container-fluid ">
             <div class="container-inf-footer row">
-                <ul class="inf-footer__ul col-4">
+                <ul class="inf-footer__ul col col-4 col-sm-4">
                     <li>Información  <span class="material-symbols-outlined">
                         info
                         </span></li>
@@ -216,7 +234,7 @@
                     <li>Tiendas</li>
                     <li>Quienes somos</li>
                 </ul>
-                <ul class="inf-footer__ul col-4">
+                <ul class="inf-footer__ul col col-4 col-sm-4">
                     <li>Mi cuenta <span class="material-symbols-outlined">
                         person
                         </span> </li>
@@ -225,7 +243,7 @@
                     <li>Historial de pedidos</li>
                     <li>Informacion personal</li>
                 </ul>
-                <ul class="inf-footer__ul col-4">
+                <ul class="inf-footer__ul col col-4 col-sm-4">
                     <li>Datos de contacto</li>
                     <li>Garantia de productos</li>
                     <li>Ventas corporativas</li>

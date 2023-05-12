@@ -19,11 +19,44 @@ body{
 header{
     background-color: #fff;
     height: 140px;
+    @include mobile{
+        height: 100px; 
+    }
+    .container-header{
+        @include mobile{
+            margin-top: 10px; 
+        }
+        .navbarsecundary{
+            display: none;
+            @include mobile{
+                display: inline;
+                z-index: 1000;
+                
+                    }
+        .links-collapse{
+            @include mobile{
+                background-color: salmon;
+                width: 50%;
+                height: 50vh;
+                            }
+            a  {
+            @include mobile{
+                line-height: 50px;
+                            }
+                            
+            }
+                    }
+            .material-symbols-outlined{
+                        text-align: center;
+                        padding-top: 14px;
+                    }
+                }
+    }
     .container-header__logo{
         padding-right: 90px;
         @include mobile{
             padding-right: 10px;
-            background-color: red;
+            
         }
         .logo-img{
             width: 120px;
@@ -32,14 +65,13 @@ header{
             @include mobile{
                 width: 60px;
                 height: 50px;
-                overflow: hidden;
             }
         }
     }
     .container-search-bar{
         padding-left: 90px;
         @include mobile{
-            padding-left: 40px;
+            padding-left: 0px;
         }
         .search-bar__input{
             background-color: #e2e2e2;
@@ -64,20 +96,28 @@ header{
             }
         }
     }
-    .trolley-login__btn{
-        @each $property, $value in $btnheader {
-            #{$property} : $value;
+    .container-trolley, .container-login{
+        .trolley-login__btn{
+            @each $property, $value in $btnheader {
+                #{$property} : $value;
+            }
+            @include mobile {
+                width: 30px;
+                height: 30px;
+                padding: 5px;
         }
-        @include mobile {
-            width: 30px;
-            height: 30px;
-            padding: 5px;
     }
-}
+    span{
+        @include mobile{
+            font-size: 22px;
+        }
+    }
+    }
+    
     .container-nav-menu{
         @include mobile{
             display: none;
-            background: red;
+            
         }
         ul{
             .--modificador{
@@ -91,12 +131,7 @@ header{
                 }
             } 
         }  
-    }
-    .navbar{
-    display: none;
-    @include mobile{
-        display: inline;
-    }
+  
     }
 }
 main{
@@ -106,17 +141,30 @@ main{
         padding: 5px;
         font-size: 26px;
         margin: 10px auto 10px 20px;
+        @include mobile{
+            @extend .btnindexconfiguration;
+            width: 150px;
+            padding: 5px;
+            font-size: 12px;
+            margin: 10px auto 10px 20px;
+        }
         
     }
     .carousel-inner{
         margin-left: 20px;
+        @include mobile{
+        margin-top: -20px;
+        }
         
 
         .img-cover{
-            
             width: map-get($coverSize , width );
-        height: map-get($coverSize , height);
-            
+            height: map-get($coverSize , height);
+                @include mobile{
+                    width: 400px;
+                    height: 200px;   
+                    
+            }
         }
     }
     .img-advertising{
@@ -124,17 +172,37 @@ main{
         .img-advertising__img{
             width: map-get($coverSize , width );
         height: map-get($coverSize , height);
+        @include mobile{
+            width: 450px;
+            height: 200px; 
+            margin-right: 10px  
+            
+    }
         }
     }
     .most-selling-products__slide, .featured-products__slide{
         @extend .flexconfigurationcenter;
         margin:20px 50px;
+        @include mobile{
+            margin:10px 0px;
+            display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+        }
         .most-selling__card__btn, .featured__card__btn{
             border-radius: 4px;
             background: #ebcded;
             border: 1px solid #000;
             padding: 5px;
             width: 150px;
+            @include mobile{
+                padding: 0;
+            width: 60px;
+            font-size: 11px
+            }
         }
     }
 
@@ -152,10 +220,20 @@ main{
         @extend .flexconfigurationaround;
         text-align: center;
         margin: 50px 30px;
+        @include mobile{
+            width: 500px;
+            height: 150px;
+            text-align: center;
+        margin: 20px 10px;
+        }
         .purchase-inf{
             border: 1px solid #ccc;
             box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.5);
             padding: 10px 90px;
+            @include mobile {
+                padding: 10px 40px; 
+                font-size: 11px;
+            }
         }
 
     }
@@ -170,6 +248,15 @@ footer{
         flex-direction: row;
         justify-content: space-between;
         margin-left: 60px;
+        @include mobile {
+            margin-left: 10px;
+            font-size: 11px;
+        }
+        span{
+            @include mobile{
+                font-size: 14px;
+            }
+        }
         ul{
             list-style-type: none;
             span{
@@ -180,6 +267,9 @@ footer{
         li:nth-child(1){
             color: salmon;
             font-size: 20px;
+            @include mobile {
+                font-size: 14px;
+            }
         }
     }
     
