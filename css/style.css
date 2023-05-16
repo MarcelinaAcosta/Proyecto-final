@@ -183,6 +183,12 @@
   width: 400px;
   height: 300px;
 }
+@media screen and (max-width: 576px) {
+  .container-img-gallery .gallery__img {
+    width: 200px;
+    height: 150px;
+  }
+}
 
 .container-about-us-description {
   text-align: center;
@@ -267,6 +273,20 @@
 
 .maincontactos {
   margin: 50px 20px;
+}
+@media screen and (max-width: 576px) {
+  .maincontactos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.maincontactos .element {
+  flex: 1;
+}
+@media screen and (max-width: 576px) {
+  .maincontactos .element {
+    flex-basis: 100%;
+  }
 }
 .maincontactos h1 {
   color: salmon;
@@ -376,7 +396,7 @@ header .container-search-bar .search-bar__input {
   background-color: #e2e2e2;
   border: none;
   border-radius: 10px;
-  padding-left: 10px;
+  padding-left: 90px;
   width: 350px;
   height: 40px;
 }
@@ -408,6 +428,7 @@ header .container-trolley .trolley-login__btn, header .container-login .trolley-
 }
 @media screen and (max-width: 576px) {
   header .container-trolley .trolley-login__btn, header .container-login .trolley-login__btn {
+    display: none;
     width: 30px;
     height: 30px;
     padding: 5px;
@@ -415,6 +436,7 @@ header .container-trolley .trolley-login__btn, header .container-login .trolley-
 }
 @media screen and (max-width: 576px) {
   header .container-trolley span, header .container-login span {
+    display: none;
     font-size: 22px;
   }
 }
@@ -453,6 +475,7 @@ main .carousel-inner {
 }
 @media screen and (max-width: 576px) {
   main .carousel-inner {
+    margin-left: 0;
     margin-top: -20px;
   }
 }
@@ -484,11 +507,6 @@ main .most-selling-products__slide, main .featured-products__slide {
   main .most-selling-products__slide, main .featured-products__slide {
     margin: 10px 0px;
     display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
   }
 }
 main .most-selling-products__slide .most-selling__card__btn, main .most-selling-products__slide .featured__card__btn, main .featured-products__slide .most-selling__card__btn, main .featured-products__slide .featured__card__btn {
@@ -517,7 +535,7 @@ main .container-purchase-inf {
 }
 @media screen and (max-width: 576px) {
   main .container-purchase-inf {
-    width: 500px;
+    width: 440px;
     height: 150px;
     text-align: center;
     margin: 20px 10px;

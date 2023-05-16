@@ -3,6 +3,16 @@
 
 .maincontactos{
     margin: 50px 20px;
+    @include mobile{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .element {
+        flex: 1;
+        @include mobile {
+            flex-basis: 100%;
+        }
+    }
     h1{
         color: salmon;
         font-size: 36px;

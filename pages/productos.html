@@ -17,8 +17,16 @@
 <body>
     <header class="container-fluid">
         <div class="container-header row">
+            <!------------------------- NAV BAR  ----------------------------->
+            <!-- ----------------------------------------------------------------- -->
+            <div class="navbarsecundary col col-sm-1">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" aria-label="Toggle navigation">
+                <span class="material-symbols-outlined">menu</span>
+                </button>
+                
+            </div>
             <div class="container-header__logo col-3 d-flex justify-content-center align-items-center">
-                <img src="/img/logo.png" alt="img-logo" class="logo-img" />
+                <img src="../img/logo.png" alt="img-logo" class="logo-img" />
             </div>
             <div class="container-search-bar col-7 d-flex justify-content-start align-items-center">
                 <input type="text" name="" id="search-bar_input" class="search-bar__input" placeholder="Search...">
@@ -33,6 +41,30 @@
                 <button class="trolley-login__btn">
                     <span class="material-symbols-outlined">person</span>
                 </button>
+            </div>
+            <!-- ------menu secundario----- -->
+            <div class="navbarsecundary ">
+                <div  class="collapse navbarsecundarycollapse" id="collapseExample">
+                    <div class="links-collapse shadow-3 p-4 d-flex flex-column" >
+                        <ul>
+                            <li>
+                                <a href="../index.html"> Inicio </a>
+                            </li>
+                            <li>
+                                <a href="quienes-somos.html"> Sobre nosotros </a>
+                            </li>
+                            <li >
+                                <a href="productos.html"> Productos</a>
+                            </li>
+                            <li >
+                                <a href="compras.html">Cómo comprar </a>
+                            </li>
+                            <li>
+                                <a href="contacto.html" >Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
         <nav class="container-nav-menu container-fluid ">
@@ -61,7 +93,7 @@
 
         <div class="containerAsideandSection row">
 
-            <aside class="container-aside-allProducts col-4">
+            <aside class="container-aside-allProducts col-4 col-sm-6">
                     <ul class="list-group">
                         <li class="list-group-item d-flex justify-content-between align-items-center">
                             Todos
@@ -133,66 +165,66 @@
         <!------------------------------------------>
         <!--------------------CARDS----------------->
 
-        <section class=" col-8">
+        <section class=" col-8 col-sm-6">
             <div class="container-allProducts-cards">
                 <div class="allProducts-card">
-                    <img src="/img/producto-destacado-1.jpg" alt="img-featured-car" class="allProducts-card__img" />
+                    <img src="../img/producto-destacado-1.jpg" alt="img-featured-car" class="allProducts-card__img" />
                     <h2 class="allProducts-card__name">CELULAR </h2>
                     <p class="allProducts-card__description">CELULAR SAMSUNG GALAXY S23 ULTRA 256GB 8GB BLACK</p>
                     <span>$9999</span>
                     <button class="allProducts-card__btn">comprar</button>
                 </div>
                 <div class="allProducts-card">
-                    <img src="/img/producto-destacado-2.jpg" alt="img-card-productPage" class="allProducts-card__img" />
+                    <img src="../img/producto-destacado-2.jpg" alt="img-card-productPage" class="allProducts-card__img" />
                     <h2 class="allProducts-card__name">NOTEBOOK</h2>
                     <p class="allProducts-card__description">NOTEBOOK DELL INSPIRON 3525 15.6" AMD RYZEN 5 8GB 256GB SSD WINDO</p>
                     <span>$9999</span>
                     <button class="allProducts-card__btn">comprar</button>
                 </div>
                 <div class="allProducts-card">
-                    <img src="/img/producto-destacado-3.jpg" alt="img-card-productPage" class="allProducts-card__img" />
+                    <img src="../img/producto-destacado-3.jpg" alt="img-card-productPage" class="allProducts-card__img" />
                     <h2 class="allProducts-card__name">XBOX </h2>
                     <p class="allProducts-card__description">MICROSOFT XBOX SERIES X 1TB + GAME PASS ULTIMATE 1 MES</p>
                     <span>$9999</span>
                     <button class="allProducts-card__btn">comprar</button>
                 </div>
                 <div class="allProducts-card">
-                    <img src="/img/producto-destacado-4-min.jpg" alt="img-card-productPage" class="allProducts-card__img" />
+                    <img src="../img/producto-destacado-4-min.jpg" alt="img-card-productPage" class="allProducts-card__img" />
                     <h2 class="allProducts-card__name">NOTEBOOK</h2>
                     <p class="allProducts-card__description">NOTEBOOK HUAWEI MATEBOOK 14" INTEL CORE I5 8GB 512GB SSD WINDOWS 11</p>
                     <span>$9999</span>
                     <button class="allProducts-card__btn">comprar</button>
                 </div>
                 <div class="allProducts-card">
-                    <img src="/img/producto-mas-vendido-1.jpg" alt="img-card-productPage" class="allProducts-card__img" />
+                    <img src="../img/producto-mas-vendido-1.jpg" alt="img-card-productPage" class="allProducts-card__img" />
                     <h2 class="allProducts-card__name"> AURICULAR</h2>
                     <p class="allProducts-card__description">AURICULAR MICROSOFT XBOX</p>
                     <span>$44.999</span>
                     <button class="allProducts-card__btn">comprar</button>
                 </div>
                 <div class="allProducts-card">
-                    <img src="/img/producto-mas-vendido-2.jpg" alt="img-card-productPage" class="allProducts-card__img" />
+                    <img src="../img/producto-mas-vendido-2.jpg" alt="img-card-productPage" class="allProducts-card__img" />
                     <h2 class="allProducts-card__name">PARLANTE</h2>
                     <p class="allProducts-card__description">PARLANTE PORTATIL JBL FLIP 6</p>
                     <span>$58.499</span>
                     <button class="allProducts-card__btn">comprar</button>
                 </div>
                 <div class="allProducts-card">
-                    <img src="/img/producto-mas-vendido-3.jpg" alt="img-most-selling" class="most-selling__img" />
+                    <img src="../img/producto-mas-vendido-3.jpg" alt="img-most-selling" class="most-selling__img" />
                     <h2 class="allProducts-card__name"> GAME PASS</h2>
                     <p class="allProducts-card__description">MICROSOFT XBOX GAME PASS ULTIMATE 3 MESES</p>
                     <span>$13.999</span>
                     <button class="allProducts-card__btn">comprar</button>
                 </div>
                 <div class="allProducts-card">
-                    <img src="/img/producto-mas-vendido-4.jpg" alt="img-most-selling" class="most-selling__img" />
+                    <img src="../img/producto-mas-vendido-4.jpg" alt="img-most-selling" class="most-selling__img" />
                     <h2 class="allProducts-card__name"> SMART TV</h2>
                     <p class="allProducts-card__description">SMART TV SAMSUNG 55" UHD AU7000</p>
                     <span>$219.999</span>
                     <button class="allProducts-card__btn">comprar</button>
                 </div>
                 <div class="allProducts-card">
-                    <img src="/img/producto-destacado-2.jpg" alt="img-card-productPage" class="allProducts-card__img" />
+                    <img src="../img/producto-destacado-2.jpg" alt="img-card-productPage" class="allProducts-card__img" />
                     <h2 class="allProducts-card__name">NOTEBOOK</h2>
                     <p class="allProducts-card__description">NOTEBOOK DELL INSPIRON 3525 15.6" AMD RYZEN 5 8GB 256GB SSD WINDO</p>
                     <span>$9999</span>
