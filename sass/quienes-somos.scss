@@ -1,5 +1,9 @@
 @import 'variables';
 .container-img-gallery{
+    @include mobile{
+        display: flex;
+        flex-wrap: wrap;
+    }
     @extend .flexconfigurationaround;
     .img-gallery{
         margin: 10px;

@@ -205,11 +205,6 @@ main{
         @include mobile{
             margin:10px 0px;
             display: flex;
-//   overflow-x: auto;
-//   scroll-snap-type: x mandatory;
-//   -webkit-overflow-scrolling: touch;
-//   scrollbar-width: none;
-//   -ms-overflow-style: none;
         }
         .most-selling__card__btn, .featured__card__btn{
             border-radius: 4px;
@@ -240,7 +235,7 @@ main{
         text-align: center;
         margin: 50px 30px;
         @include mobile{
-            width: 400px;
+            width: 300px;
             height: 150px;
             text-align: center;
         margin: 20px 10px;
