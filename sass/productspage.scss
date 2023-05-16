@@ -3,15 +3,28 @@
 .container-aside-allProducts{
     margin-top: 75px;
     padding-left: 40px;
+    @include mobile{
+        display: none;
+    }
 }
 
 .container-allProducts-cards{
     margin-top: 70px;
     display: flex;
     flex-wrap: wrap;
+    @include mobile{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
     
     .allProducts-card{
         @extend .most-selling__card;
+        flex: 1;
+        @include mobile {
+            flex-basis: 30%;
+            
+        }
             .allProducts-card__btn{
                 @extend .btnindexconfiguration;
                 border: none;
